@@ -12,6 +12,9 @@ class LifecycleA extends Component {
         console.log("LifecycleA Constructure");
     }
 
+    testMethod=()=>{
+        alert("From Parent")
+    }
     static getDerivedStateFromProps(props, state){
         console.log("LifecycleA getDerivedFromProps")
         return null
@@ -47,7 +50,7 @@ class LifecycleA extends Component {
             <div>
                 <h1>Count : {this.state.count}</h1>
                 <button onClick={this.stateChange}>Change STate</button>
-                {/* <LifecycleB parentCount={this.state.count}></LifecycleB> */}
+                <LifecycleB parentCount={this.state.count} testMethod={this.testMethod}></LifecycleB>
             </div>
         )
     }

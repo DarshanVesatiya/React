@@ -46,7 +46,7 @@ class LifecycleB extends Component {
             <div>
                 <h1>Parent Count {this.props.parentCount}</h1>
                 <h1>Count : {this.state.count}</h1>
-                <button onClick={this.stateChange}>Chnage STate</button>
+                <button onClick={this.props.testMethod}>Chnage STate</button>
             </div>
         )
     }

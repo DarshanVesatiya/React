@@ -4,7 +4,6 @@ import React from 'react'
 //     return <h1>Hello Darshan</h1>
 // }
 const Greet = (props) => {
-    props.name = "when";
     return(
         <div>
             <h1>
