@@ -22,9 +22,9 @@ class LifecycleA extends Component {
     }
 
     stateChange=()=>{
-        this.setState({
-            count: ++this.state.count
-        })
+        // this.setState({
+        //     count: ++this.state.count
+        // })
     }
 
     shouldComponentUpdate(){
@@ -47,7 +47,7 @@ class LifecycleA extends Component {
             <div>
                 <h1>Count : {this.state.count}</h1>
                 <button onClick={this.stateChange}>Change STate</button>
-                {/* <LifecycleB parentCount={this.state.count}></LifecycleB> */}
+                <LifecycleB parentCount={this.state.count}></LifecycleB>
             </div>
         )
     }

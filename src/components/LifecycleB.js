@@ -21,9 +21,9 @@ class LifecycleB extends Component {
     }
 
     stateChange=()=>{
-        this.setState({
-            count : ++this.state.count
-        })
+        // this.setState({
+        //     count : ++this.state.count
+        // })
     }
 
     shouldComponentUpdate(){
