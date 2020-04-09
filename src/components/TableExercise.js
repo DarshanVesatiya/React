@@ -19,7 +19,7 @@ export default class TableExercise extends Component {
             firstName:event.target.value
         })
     }
-    
+
     getLastName = (event)=>{
         this.setState({
             lastName:event.target.value
@@ -54,7 +54,6 @@ export default class TableExercise extends Component {
     }
 
     deleteName=(id)=>{
-        console.log("it is entering is this state",id)
         let userNew = this.state.user
         userNew.forEach((element,index)=>{
             if(element.id===id){
