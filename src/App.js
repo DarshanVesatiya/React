@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Parent from './components/Parent';
+import ComponentA from './components/ComponentA';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Parent />
+          <ComponentA />
       </header>
     </div>
   );
